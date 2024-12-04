@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Invitation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .invitation-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+        .invitation-card h1 {
+            color: #ff6b6b;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .invitation-card p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+        .invitation-card button {
+            background-color: #ff6b6b;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .invitation-card button:hover {
+            background-color: #e63e3e;
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation-card">
+        <h1>¡Estás Invitado!</h1>
+        <p>Únete a la celebración de mi cumpleaños.</p>
+        <p><strong>Cuándo:</strong> 12 de diciembre, 6:00 PM</p>
+        <p><strong>Dónde:</strong> Mi casa (123 Calle Feliz, Ciudad)</p>
+        <p>¡No faltes! Habrá sorpresas y mucha diversión.</p>
+        <button onclick="rsvp()">Confirmar Asistencia</button>
+    </div>
+
+    <script>
+        function rsvp() {
+            alert('¡Gracias por confirmar tu asistencia! Nos vemos pronto. 🎉');
+        }
+    </script>
+</body>
+</html>
